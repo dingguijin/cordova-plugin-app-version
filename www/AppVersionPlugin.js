@@ -38,7 +38,7 @@ getAppVersion.getVersionCode = function (success, fail) {
 };
 
 getAppVersion.getBundleIdentifier = function (success, fail) {
-  return getPromisedCordovaExec('getBundleIndentifier', success, fail);
+  return getPromisedCordovaExec('getBundleIdentifier', success, fail);
 };
 
 module.exports = getAppVersion;
