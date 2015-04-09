@@ -41,4 +41,8 @@ getAppVersion.getBundleIdentifier = function (success, fail) {
   return getPromisedCordovaExec('getBundleIdentifier', success, fail);
 };
 
+getAppVersion.getBundleDisplayName = function (success, fail) {
+  return getPromisedCordovaExec('getBundleDisplayName', success, fail);
+};
+
 module.exports = getAppVersion;

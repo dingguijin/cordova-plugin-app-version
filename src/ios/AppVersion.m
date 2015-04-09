@@ -32,4 +32,16 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
 }
 
+- (void)getBundleDisplayName:(CDVInvokedUrlCommand*)command
+{
+    NSString* callbackId = command.callbackId;
+    NSString* name = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    if (name == nil) {
+        NSLog(@"CFBundleDisplayName nil, giving up");
+    }
+
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:bid];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
+}
+
 @end

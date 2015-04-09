@@ -4,5 +4,6 @@
 
 - (void)getVersionNumber:(CDVInvokedUrlCommand*)command;
 - (void)getBundleIdentifier:(CDVInvokedUrlCommand*)command;
+- (void)getBundleDisplayName:(CDVInvokedUrlCommand*)command;
 
 @end
