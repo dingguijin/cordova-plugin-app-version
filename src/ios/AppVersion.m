@@ -24,7 +24,7 @@
 {
     NSString* callbackId = command.callbackId;
     NSString* bid = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
-    if (version == nil) {
+    if (bid == nil) {
         NSLog(@"CFBundleIdentifier nil, giving up");
     }
 
