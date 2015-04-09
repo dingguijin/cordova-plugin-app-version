@@ -40,7 +40,7 @@
         NSLog(@"CFBundleDisplayName nil, giving up");
     }
 
-    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:bid];
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:name];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
 }
 
